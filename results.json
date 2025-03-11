@@ -40,6 +40,14 @@
         {
           "outputFolder": "my-allure-results"
         }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "C:\\Users\\Ashritha\\Desktop\\Playwright Framework\\utils\\customReporter.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -106,97 +114,51 @@
   },
   "suites": [
     {
-      "title": "orderTest.spec.js",
-      "file": "orderTest.spec.js",
+      "title": "loginTest.spec.js",
+      "file": "loginTest.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Order Page Tests",
-          "file": "orderTest.spec.js",
-          "line": 10,
-          "column": 6,
-          "specs": [
+          "title": "Login Page Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Verify order placement",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6577,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Successfully logged in\n"
-                        },
-                        {
-                          "text": " Navigated to cart for order placement.\n"
-                        },
-                        {
-                          "text": "Place Order button is visible. Clicking now...\n"
-                        },
-                        {
-                          "text": "Clicked 'Place Order' button.\n"
-                        },
-                        {
-                          "text": " Order details filled successfully.\n"
-                        },
-                        {
-                          "text": "Order placed successfully!\n"
-                        },
-                        {
-                          "text": " Order details entered successfully.\n"
-                        },
-                        {
-                          "text": "clicked on purchase button and Order placed successfully!\n"
-                        },
-                        {
-                          "text": "Order success message is visible\n"
-                        },
-                        {
-                          "text": "Clicked OK button on success popup.\n"
-                        },
-                        {
-                          "text": "Confirmed order by clicking 'OK' button.\n"
-                        },
-                        {
-                          "text": "Logged out successfully.\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-03-11T12:23:21.666Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-11T13:12:19.635Z",
+                  "attachments": []
                 }
               ],
-              "id": "4e7e29b945d67d23264c-627b3c39f94b6a6fccba",
-              "file": "orderTest.spec.js",
-              "line": 24,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "34079698e3a4e33a459d-319850470c34aeb76176",
+          "file": "loginTest.spec.js",
+          "line": 7,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-11T12:23:20.457Z",
-    "duration": 8500.582,
+    "startTime": "2025-03-11T13:12:18.376Z",
+    "duration": 9102.899000000001,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

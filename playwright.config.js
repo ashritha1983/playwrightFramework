@@ -32,8 +32,11 @@ export default defineConfig({
     ['html'],
     ['junit', { outputFile: 'results.xml' }],
     ['json', { outputFile: 'results.json' }],
-    ['allure-playwright', { outputFolder: 'my-allure-results' }]
-  ],
+    ['allure-playwright', { outputFolder: 'my-allure-results' }],
+    ['line'],
+    [require.resolve('./utils/customReporter.js')] // Ensure correct path resolution
+],
+
            
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

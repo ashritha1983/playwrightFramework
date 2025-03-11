@@ -1,21 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.500582">
-<testsuite name="orderTest.spec.js" timestamp="2025-03-11T12:23:20.502Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.577" errors="0">
-<testcase name="Order Page Tests › Verify order placement" classname="orderTest.spec.js" time="6.577">
-<system-out>
-<![CDATA[Successfully logged in
- Navigated to cart for order placement.
-Place Order button is visible. Clicking now...
-Clicked 'Place Order' button.
- Order details filled successfully.
-Order placed successfully!
- Order details entered successfully.
-clicked on purchase button and Order placed successfully!
-Order success message is visible
-Clicked OK button on success popup.
-Confirmed order by clicking 'OK' button.
-Logged out successfully.
-]]>
-</system-out>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.102899">
+<testsuite name="loginTest.spec.js" timestamp="2025-03-11T13:12:18.416Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.656" errors="0">
+<testcase name="Login Page Test" classname="loginTest.spec.js" time="6.656">
 </testcase>
 </testsuite>
 </testsuites>
