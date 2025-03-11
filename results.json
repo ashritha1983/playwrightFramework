@@ -1,0 +1,205 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Ashritha\\Desktop\\Playwright Framework\\playwright.config.js",
+    "rootDir": "C:/Users/Ashritha/Desktop/Playwright Framework/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\Ashritha\\Desktop\\Playwright Framework\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Ashritha/Desktop/Playwright Framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Ashritha/Desktop/Playwright Framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Ashritha/Desktop/Playwright Framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Ashritha/Desktop/Playwright Framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Ashritha/Desktop/Playwright Framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Ashritha/Desktop/Playwright Framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.51.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "orderTest.spec.js",
+      "file": "orderTest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Order Page Tests",
+          "file": "orderTest.spec.js",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify order placement",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6577,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Successfully logged in\n"
+                        },
+                        {
+                          "text": " Navigated to cart for order placement.\n"
+                        },
+                        {
+                          "text": "Place Order button is visible. Clicking now...\n"
+                        },
+                        {
+                          "text": "Clicked 'Place Order' button.\n"
+                        },
+                        {
+                          "text": " Order details filled successfully.\n"
+                        },
+                        {
+                          "text": "Order placed successfully!\n"
+                        },
+                        {
+                          "text": " Order details entered successfully.\n"
+                        },
+                        {
+                          "text": "clicked on purchase button and Order placed successfully!\n"
+                        },
+                        {
+                          "text": "Order success message is visible\n"
+                        },
+                        {
+                          "text": "Clicked OK button on success popup.\n"
+                        },
+                        {
+                          "text": "Confirmed order by clicking 'OK' button.\n"
+                        },
+                        {
+                          "text": "Logged out successfully.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-11T12:23:21.666Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e7e29b945d67d23264c-627b3c39f94b6a6fccba",
+              "file": "orderTest.spec.js",
+              "line": 24,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-11T12:23:20.457Z",
+    "duration": 8500.582,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

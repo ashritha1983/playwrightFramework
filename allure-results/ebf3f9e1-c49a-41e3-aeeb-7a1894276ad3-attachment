@@ -1,0 +1,88 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Order Page Tests >> Verify order placement
+- Location: C:\Users\Ashritha\Desktop\Playwright Framework\tests\orderTest.spec.js:24:9
+
+# Error details
+
+```
+Error: Playwright Test did not expect test() to be called here.
+Most common reasons include:
+- You are calling test() in a configuration file.
+- You are calling test() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test.
+    at C:\Users\Ashritha\Desktop\Playwright Framework\tests\orderTest.spec.js:43:13
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import LoginPage from '../pages/loginPage.spec';
+   3 | import CartPage from '../pages/cartPage.spec';
+   4 | import OrderPage from '../pages/orderPage.spec';
+   5 | import { CONFIG } from '../utils/config.js';
+   6 | import { orderData } from '../utils/orderData.js';
+   7 | import { LOGOUT } from '../pageObjects/login.spec';
+   8 | import { purchase, successfullmsg, okbtn } from '../pageObjects/order.spec.js';
+   9 |
+  10 | test.describe('Order Page Tests', () => {
+  11 |
+  12 |     test.beforeEach(async ({ page }) => {
+  13 |         const loginPage = new LoginPage(page);
+  14 |         await loginPage.goToLoginPage();
+  15 |         await loginPage.login(CONFIG.USERNAME, CONFIG.PASSWORD);
+  16 |         console.log("Successfully logged in");
+  17 |
+  18 |         const cartPage = new CartPage(page);
+  19 |         await cartPage.goToCart();
+  20 |
+  21 |      
+  22 |     });
+  23 |
+  24 |     test('Verify order placement', async ({ page }) => {
+  25 |         const cartPage = new CartPage(page);
+  26 |         const orderPage = new OrderPage(page);
+  27 |
+  28 |         await cartPage.goToCart();
+  29 |         console.log(" Navigated to cart for order placement.");
+  30 |
+  31 |         await orderPage.placeOrder();
+  32 |         console.log("Clicked 'Place Order' button.");
+  33 |
+  34 |         await orderPage.fillOrderDetails(orderData);
+  35 |         console.log(" Order details entered successfully.");
+  36 |
+  37 |         await page.locator(purchase).click();
+  38 |         console.log("clicked on purchase button and Order placed successfully!");
+  39 |        
+  40 |         // await orderPage.confirmOrder();
+  41 |         // console.log("Confirmed order by clicking 'OK' button.");
+  42 |       
+> 43 |         test('Confirm Order', async ({ page, browserName }) => {
+     |             ^ Error: Playwright Test did not expect test() to be called here.
+  44 |             const orderPage = new OrderPage(page);
+  45 |             await orderPage.confirmOrder(browserName);
+  46 |             console.log("Confirmed order by clicking 'OK' button.");
+  47 |         });
+  48 |         
+  49 |     });
+  50 |
+  51 |     test.afterEach(async ({ page }) => {
+  52 |         const cartPage = new CartPage(page);    
+  53 |         await cartPage.logout();
+  54 |         console.log("Logged out successfully.");
+  55 |     });
+  56 |     
+  57 |     
+  58 |
+  59 | });
+  60 |
+```
