@@ -1,0 +1,14 @@
+Successfully logged in
+Added Samsung Galaxy to cart.
+Added Sony Vaio to cart.
+Navigated to cart for order placement.
+Place Order button is visible. Clicking now...
+Clicked 'Place Order' button.
+ Order details filled successfully.
+Order placed successfully!
+Order details entered successfully.
+Clicked on purchase button and order placed successfully!
+Order success message is visible
+Clicked OK button on success popup.
+Confirmed order by clicking 'OK' button.
+Logged out successfully.

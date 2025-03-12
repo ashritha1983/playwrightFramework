@@ -1,0 +1,12 @@
+Successfully logged in
+ Navigated to cart for order placement.
+Place Order button is visible. Clicking now...
+Clicked 'Place Order' button.
+ Order details filled successfully.
+Order placed successfully!
+ Order details entered successfully.
+clicked on purchase button and Order placed successfully!
+Order success message is visible
+Clicked OK button on success popup.
+Confirmed order by clicking 'OK' button.
+Logged out successfully.

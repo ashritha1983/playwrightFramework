@@ -1,6 +1,12 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.102899">
-<testsuite name="loginTest.spec.js" timestamp="2025-03-11T13:12:18.416Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.656" errors="0">
-<testcase name="Login Page Test" classname="loginTest.spec.js" time="6.656">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.122004999999998">
+<testsuite name="cartTest.spec.js" timestamp="2025-03-12T07:30:17.396Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.414" errors="0">
+<testcase name="Cart Page Tests › verify adding item from different sections" classname="cartTest.spec.js" time="17.414">
+<system-out>
+<![CDATA[✅ Item from phone section added to cart
+✅ Item from laptop section added to cart
+✅ Item from monitor section added to cart
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

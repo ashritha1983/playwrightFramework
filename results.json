@@ -114,51 +114,70 @@
   },
   "suites": [
     {
-      "title": "loginTest.spec.js",
-      "file": "loginTest.spec.js",
+      "title": "cartTest.spec.js",
+      "file": "cartTest.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Login Page Test",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Cart Page Tests",
+          "file": "cartTest.spec.js",
+          "line": 9,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "verify adding item from different sections",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 6656,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-11T13:12:19.635Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17414,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Item from phone section added to cart\n"
+                        },
+                        {
+                          "text": "✅ Item from laptop section added to cart\n"
+                        },
+                        {
+                          "text": "✅ Item from monitor section added to cart\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-12T07:30:18.229Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "ff19d36eb7dfcb7fe146-be66a118afe0dab2de55",
+              "file": "cartTest.spec.js",
+              "line": 23,
+              "column": 9
             }
-          ],
-          "id": "34079698e3a4e33a459d-319850470c34aeb76176",
-          "file": "loginTest.spec.js",
-          "line": 7,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-11T13:12:18.376Z",
-    "duration": 9102.899000000001,
+    "startTime": "2025-03-12T07:30:17.254Z",
+    "duration": 19122.004999999997,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

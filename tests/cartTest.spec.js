@@ -24,7 +24,7 @@ test.describe('Cart Page Tests', () => {
         // await page.waitForLoadState('domcontentloaded');
     
         // let itemCount = await page.locator('//tbody[@id="tbodyid"]//tr').count();
-        // console.log(`🛒 Items in cart before logout: ${itemCount}`);
+        // console.log(` Items in cart before logout: ${itemCount}`);
     
         // if (itemCount > 0) {
         //     await cartPage.deleteCartItems();
@@ -34,15 +34,15 @@ test.describe('Cart Page Tests', () => {
         //     console.log(`Items remaining after deletion: ${itemCount}`);
         
         //     if (itemCount > 0) {
-        //         console.warn("⚠️ Some items were not deleted. Retrying...");
+        //         console.warn(" Some items were not deleted. Retrying...");
         //         await cartPage.deleteCartItems();
     
         //         await page.waitForLoadState('domcontentloaded');
         //         itemCount = await page.locator('//tbody[@id="tbodyid"]//tr').count();
-        //         console.log(`✅ Final item count after retry: ${itemCount}`);
+        //         console.log(`Final item count after retry: ${itemCount}`);
         //     }
         // } else {
-        //     console.log("✅ Cart is already empty.");
+        //     console.log("Cart is already empty.");
         // }
 
         await cartPage.logout();

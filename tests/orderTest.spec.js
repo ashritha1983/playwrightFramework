@@ -16,30 +16,34 @@ test.describe('Order Page Tests', () => {
         console.log("Successfully logged in");
 
         const cartPage = new CartPage(page);
-        await cartPage.goToCart();
-
-     
+        // await cartPage.goToCart();
     });
 
-    test('Verify order placement', async ({ page }) => {
+    test('Verify order placement with items added to cart', async ({ page }) => {
         const cartPage = new CartPage(page);
         const orderPage = new OrderPage(page);
 
+      
+        await cartPage.addToCartITEMINPHONE(); 
+        console.log("Added Samsung Galaxy to cart.");
+
+        await cartPage.addToCartITEMINLAPTOP();
+        console.log("Added Sony Vaio to cart.");
+
         await cartPage.goToCart();
-        console.log(" Navigated to cart for order placement.");
+        console.log("Navigated to cart for order placement.");
 
         await orderPage.placeOrder();
         console.log("Clicked 'Place Order' button.");
 
         await orderPage.fillOrderDetails(orderData);
-        console.log(" Order details entered successfully.");
+        console.log("Order details entered successfully.");
 
         await page.locator(purchase).click();
-        console.log("clicked on purchase button and Order placed successfully!");
-       
+        console.log("Clicked on purchase button and order placed successfully!");
+
         await orderPage.confirmOrder();
         console.log("Confirmed order by clicking 'OK' button.");
-      
     });
 
     test.afterEach(async ({ page }) => {
@@ -47,7 +51,5 @@ test.describe('Order Page Tests', () => {
         await cartPage.logout();
         console.log("Logged out successfully.");
     });
-    
-    
 
 });

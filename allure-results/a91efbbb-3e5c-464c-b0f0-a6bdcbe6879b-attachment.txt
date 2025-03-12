@@ -1,0 +1,5 @@
+ Item from phone section added to cart
+Item from laptop section added to cart
+Item from laptop section added to cart
+ Items in cart before logout: 6
+ Items in cart before deletion: 6
