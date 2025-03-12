@@ -1,1 +1,1 @@
-Playwright POM Framework
+Playwright hybrid Framework
